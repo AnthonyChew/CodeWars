@@ -9,17 +9,13 @@ def exp_sum(n):
 
     count = len(cd) - 1
     resultCount = 0
+    numCount = 0
     
     #posibility
     while(count != 0):
         
-        for numCount in range(count):
-            tempSum = cd[count] + cd[numCount]    
-            if(tempSum > n):
-                break
-            else:
-                resultCount += 1
-            print(tempSum)
+        while( (cd[count] + cd[numCount]) < n ):
+            
         
         count -= 1
     
